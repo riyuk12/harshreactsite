@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://besst.in/registration</title>
+  <link>https://besst.in/registration</link>
+
+<item>
+     <link>https://besst.in/registration/</link>
+     <title>BESST</title>
+     <description>BESST: Welcome to,
+  Brahmaputra Exam Success Support Team</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

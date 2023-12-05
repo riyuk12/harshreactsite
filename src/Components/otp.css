@@ -1,0 +1,41 @@
+.otp-input {
+  display: flex;
+  justify-content: center;
+}
+
+.otp-input input {
+  width: 2em !important;
+  height: 2em;
+  text-align: center;
+  font-size: 25px;
+  padding: 0.5px;
+  color: black;
+  border-radius: 4px;
+  border: 2px solid #aaaaaa;
+}
+
+.form-group {
+  color: rgb(177, 11, 193);
+  border: 2px solid rgb(177, 11, 193);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.form-group h1 {
+  font-size: 15px;
+}
+
+.form-group p {
+  font-size: 10px;
+}
+
+.edit-btn {
+  color: rgb(177, 11, 193);
+  border-left: none !important;
+}
+
+.edit-btn:hover {
+  transform: scale(1.05);
+  border: 1px solid #c2c2c2 !important;
+  border-left: none !important;
+}

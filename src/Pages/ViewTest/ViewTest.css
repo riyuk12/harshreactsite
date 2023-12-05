@@ -1,0 +1,253 @@
+.back-btn-view-exam {
+  background-color: rgba(8, 8, 8, 0.85);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  z-index: 9999;
+}
+
+.back-btn-view-exam:hover {
+  background-color: rgba(26, 26, 26, 0.85);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lock-heading {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 1rem;
+  font-weight: 400;
+}
+
+.lock-heading+p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.pagination-list-item {
+  padding: 0.85rem;
+  cursor: pointer;
+}
+
+.pagination-list-item:hover {
+  background-color: #c7c6c6;
+}
+
+.pagination-list-item.active {
+  background-color: #7b1fa2 !important;
+  color: #fff;
+}
+
+.drop-down:hover {
+  color: "gray" !important;
+}
+
+.drop-down {
+  background-color: white !important;
+  border: 1px solid rgb(151, 148, 148);
+}
+
+.grid-container {
+  display: inline-grid;
+  column-gap: 20px;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+.full-img-bg {
+  background-image: url("../../Assets/images/translusent-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.main-view-test-wrapper {
+  max-width: 85%;
+  margin: 2rem auto;
+  min-height: calc(100vh - 136px);
+}
+
+.test-data-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.test-pagination-list {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: sticky;
+  top: 160px;
+  bottom: 0;
+}
+
+.main-heading {
+  color: #7b1fa2;
+  font-weight: 800;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.fallback-message-view-test-container {
+  height: calc(100vh - 200px);
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.faq-row {
+  border: 1px solid #c7c6c6;
+  border-radius: 10px;
+}
+
+.paper-list-pagination-container {
+  min-height: 325px;
+  max-height: 325px;
+  overflow: auto;
+  border-radius: 10px;
+  border: 1px solid #c7c6c6;
+  background-color: #fff;
+}
+
+.papers-list-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.exam-card-container {
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 1.25rem;
+  background-color: #fff;
+  border: 1px solid #c7c6c6;
+}
+
+.exam-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.test-details-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.test-details-container>p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.paper-heading-view-test-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.paper-heading-view-test {
+  color: #7b1fa2;
+  font-weight: 600;
+  margin-bottom: 4px !important;
+}
+
+.paper-heading-view-test-container+p {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+@media (max-width: 1200px) {
+  .test-pagination-list {
+    flex: 1;
+  }
+}
+
+@media (max-width: 950px) {
+  .test-data-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .paper-list-pagination-container {
+    min-height: 200px;
+    max-height: 200px;
+  }
+
+  .test-pagination-list {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-view-test-wrapper {
+    max-width: 95%;
+  }
+
+  .back-btn-view-exam {
+    left: 5px;
+    background-color: rgba(8, 8, 8, 0.65);
+  }
+
+  .exam-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .start-btn-view-test {
+    align-self: flex-end;
+  }
+
+  .paper-heading-view-test {
+    font-size: 20px;
+  }
+
+  .paper-heading-view-test-container>p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .exam-card-container {
+    padding: 0.5rem;
+  }
+
+  .paper-heading-view-test {
+    font-size: 20px;
+  }
+
+  .paper-heading-view-test-container+p {
+    font-size: 15px;
+  }
+}

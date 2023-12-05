@@ -1,0 +1,22 @@
+https://besst.in/registration/
+
+
+
+# Local test
+REACT_APP_BASE_URL= http://68.178.172.171:8282/besstMainApi
+
+# UAT
+# REACT_APP_BASE_URL= https://besst.in/besstMainApi
+
+#  http://68.178.172.171:8282/besstMainApi https://besst.in/besstMainApi
+REACT_APP_MAP_URL=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.832618781456!2d91.82181131495342!3d26.13699998346788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55c6a8e4bda24a24!2zMjbCsDA4JzEzLjIiTiA5McKwNDknMjYuNCJF!5e0!3m2!1sen!2sin!4v1656154630597!5m2!1sen!2sin
+REACT_APP_KEY =Test@001Best@001
+REACT_APP_CLIENT_ID=409372475781-oi307sqt9nkbd88jsfn79f1dakos8oo1.apps.googleusercontent.com
+REACT_APP_API_CLIENT_ID=MVOZ7rblFHsvdzk25vsQpQ==
+REACT_APP_CLIENT_SECRET=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
+REACT_APP_CLIENT_URL=http://localhost:8000
+REACT_APP_FACEBOOK_CLIENT_ID=217393734561271
+REACT_APP_PHONE_NUMBER=9365834467
+REACT_APP_MESSAGE=Hi, %0A BESST (Brahmaputra Exam Success Support Team) is secure portal that helps students achieve Common University Entrance Test (CUET) dream.%0A It provides practice/mock papers, live classes by panel of expert faculties. It also provides simulation environment to help students practice for the following:%0A a. Actual NTA Registration process (environment),%0A b. Actual NTA Examination (environment),%0A c. How to applying to various universities (environment),%0A Register now%0A https://besst.in
+REACT_APP_TEMP_CLIENT_ID=181691258279-pdft8gl7ga9c6di5orlf049i82u29i27.apps.googleusercontent.com
+REACT_APP_TEMP_CLIENT_SECRET=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

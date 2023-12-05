@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@300;400&family=League+Spartan:wght@300&family=Montserrat&family=Open+Sans&family=PT+Sans:ital@1&family=Poppins&family=Roboto:ital@1&family=Source+Serif+4:opsz@8..60&display=swap');
+
+:root {
+    --transition-duration: 0.5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 200ms linear !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 !important;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* scrollbar styles */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #EEEEEE;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9E9E9E;
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.card-skeleton-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skeleton-bg{
+    background: rgba(0,0,0, 0.3);
+    animation: skeletonPulse 1.5s infinite;
+}
+
+.pulse-animation{
+    animation: skeletonPulse 1.5s infinite;
+}
+
+.answer-container-skeleton{
+    height: 140px;
+}
+
+.course-name-skeleton{
+    height: 12px;
+    width: 80%;
+    border-radius: 4px;
+}
+
+.full-w-skeleton{
+    height: 25px;
+    width: 100%;
+    border-radius: 4px;
+
+}
+
+.name-skeleton{
+    height: 20px;
+    width: 70%;
+    border-radius: 4px;
+}
+
+.small-name-skeleton{
+    height: 20px;
+    width: 50%;
+    border-radius: 4px;
+}
+
+.rec-live-classes-skeleton{
+    height: 60px;
+    border-radius: 4px;
+}
+
+.card-profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.card-title{
+    height: 25px;
+    width: 70%;
+    border-radius: 8px;
+}
+
+@keyframes skeletonPulse {
+  0% {
+    opacity: 1;
+  }
+  40%{
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
