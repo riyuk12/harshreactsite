@@ -67,16 +67,18 @@ function Sign_up() {
   return (
     <div
    
-      style={{
-        backgroundImage: `url("${process.env.PUBLIC_URL}/assets/cardimg/7a4c0d6ee7cceed8cf02a566d9596667.png")`,
-        backgroundSize: "cover",
-        height: "100vh",
-        display: "flex",
-        width: "100%",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "rgba(123, 31, 162, 0.5)",
-      }}
+    style={{
+      backgroundColor: "rgba(123, 31, 162, 0.5) !important", // Try adding !important
+      backgroundImage: ` url("${process.env.PUBLIC_URL}/assets/cardimg/7a4c0d6ee7cceed8cf02a566d9596667.png")`,
+      WebkitBackdropFilter: "blur(8px)",  // For WebKit-based browsers
+      backdropFilter: "blur(8px)",        // Standard property
+      backgroundSize: "cover",
+      height: "100vh",
+      display: "flex",
+      width: "100%",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
     >
       <Card style={{ width: "700px", padding: "30px", height: "500px" }}  className="cards-container">
         <h4 className="sign_in_head text-center">Sign Up to your account</h4>

@@ -17,7 +17,7 @@ function Signin_OTP() {
     if (step === 1) {
       try {
         setStep(2);
-        const response = await axios.post("YOUR_Signin_OTP_API_ENDPOINT", {
+        const response = await axios.post("http://68.178.172.171:8282/besstMainApi/wl/sendOTP", {
           email,
         });
 
@@ -31,7 +31,7 @@ function Signin_OTP() {
       }
     } else if (step === 2) {
       try {
-        const response = await axios.post("YOUR_VERIFY_OTP_API_ENDPOINT", {
+        const response = await axios.post("http://68.178.172.171:8282/besstMainApi/wl/verifyOTP", {
           email,
           otp,
         });
@@ -48,7 +48,7 @@ function Signin_OTP() {
 
   const handleResendOtp = async () => {
     try {
-      const response = await axios.post("YOUR_RESEND_OTP_API_ENDPOINT", {
+      const response = await axios.post("http://68.178.172.171:8282/besstMainApi/wl/sendOTP", {
         email,
       });
 
@@ -115,9 +115,9 @@ function Signin_OTP() {
         <Form>
           {step === 1 && (
             <Form.Group className="mb-3">
-              <Form.Label>Mobile Number</Form.Label>
+              <Form.Label>Email</Form.Label>
               <Form.Control
-                type="number"
+                type="text"
                 placeholder="Enter Email / Mobile Number"
                 onChange={(e) => setEmail(e.target.value)}
                 style={{
